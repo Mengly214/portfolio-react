@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, Mail, Github, Linkedin, ExternalLink, Code, Palette, Database, Cpu, Moon, Sun, ChevronDown, Terminal, Award, Briefcase, GraduationCap, Calendar, MapPin, Star, TrendingUp, Zap, Heart, Coffee, Music, Camera, Book, Rocket, ArrowRight, Download, Send, Check } from 'lucide-react';
+import { Menu, X, Mail, Facebook, Github, Linkedin, ExternalLink, Code, Palette, Database, Cpu, Moon, Sun, ChevronDown, Terminal, Award, Briefcase, GraduationCap, Calendar, MapPin, Star, TrendingUp, Zap, Heart, Coffee, Music, Camera, Book, Rocket, ArrowRight, Download, Send, Check } from 'lucide-react';
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -1094,7 +1094,7 @@ export default function Portfolio() {
               
               <div className="space-y-4 mb-8">
                 <a
-                  href="mailto:john.doe@example.com"
+                  href="mailto:heangmengly@example.com"
                   onMouseEnter={() => setCursorVariant('hover')}
                   onMouseLeave={() => setCursorVariant('default')}
                   className={`flex items-center gap-4 p-4 ${cardBgClass} rounded-lg hover:scale-105 transition-all duration-300 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}
@@ -1104,12 +1104,12 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-sm text-gray-400">john.doe@example.com</div>
+                    <div className="text-sm text-gray-400">mengly@example.com</div>
                   </div>
                 </a>
                 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Mengly214"
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={() => setCursorVariant('hover')}
@@ -1121,12 +1121,12 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="font-semibold">GitHub</div>
-                    <div className="text-sm text-gray-400">github.com/johndoe</div>
+                    <div className="text-sm text-gray-400">github.com/mengly</div>
                   </div>
                 </a>
                 
                 <a
-                  href="https://linkedin.com"
+                  href="https://web.facebook.com/heang.mengly.491024?rdid=iWU1SIRinSF63VWW&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1Bpwkmq4xy%2F%3F_rdc%3D1%26_rdr#"
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={() => setCursorVariant('hover')}
@@ -1134,11 +1134,12 @@ export default function Portfolio() {
                   className={`flex items-center gap-4 p-4 ${cardBgClass} rounded-lg hover:scale-105 transition-all duration-300 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg flex items-center justify-center">
-                    <Linkedin className="text-white" size={24} />
+                    {/* <Linkedin className="text-white" size={24} /> */}
+                    <Facebook />
                   </div>
                   <div>
-                    <div className="font-semibold">LinkedIn</div>
-                    <div className="text-sm text-gray-400">linkedin.com/in/johndoe</div>
+                    <div className="font-semibold">Facebook</div>
+                    <div className="text-sm text-gray-400">facebook.com/mengly</div>
                   </div>
                 </a>
               </div>
@@ -1169,7 +1170,7 @@ export default function Portfolio() {
                   <label className="block mb-2 text-sm font-semibold">Your Name</label>
                   <input
                     type="text"
-                    placeholder="John Smith"
+                    placeholder="Heang Mengly"
                     required
                     className={`w-full px-4 py-3 rounded-lg ${isDarkMode ? 'bg-gray-700' : 'bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all`}
                   />
@@ -1179,7 +1180,7 @@ export default function Portfolio() {
                   <label className="block mb-2 text-sm font-semibold">Your Email</label>
                   <input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="mengly@example.com"
                     required
                     className={`w-full px-4 py-3 rounded-lg ${isDarkMode ? 'bg-gray-700' : 'bg-gray-100'} focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all`}
                   />
@@ -1224,7 +1225,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
-                JD.Dev
+                ML.DEV
               </div>
               <p className={secondaryTextClass}>
                 Building digital experiences that make a difference. Let's create something amazing together.
@@ -1250,7 +1251,7 @@ export default function Portfolio() {
               <h4 className="font-bold mb-4">Connect</h4>
               <div className="flex gap-4 mb-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Mengly214"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-10 h-10 rounded-lg ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} flex items-center justify-center hover:scale-110 transition-transform`}
@@ -1280,10 +1281,10 @@ export default function Portfolio() {
 
           <div className={`pt-8 border-t ${isDarkMode ? 'border-gray-800' : 'border-gray-200'} text-center`}>
             <p className={secondaryTextClass}>
-              © 2024 John Doe. Crafted with <Heart size={16} className="inline text-red-500" fill="currentColor" /> using React & Tailwind CSS
+              © 2025 Heang Mengly. Crafted with <Heart size={16} className="inline text-red-500" fill="currentColor" /> using React & Tailwind CSS
             </p>
             <p className={`text-sm ${secondaryTextClass} mt-2`}>
-              All rights reserved. Design & Development by John Doe
+              All rights reserved. Design & Development by Heang Mengly
             </p>
           </div>
         </div>
