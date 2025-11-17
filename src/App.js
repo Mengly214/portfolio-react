@@ -432,7 +432,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
-              H.Mengly
+              JD.Dev
             </div>
 
             {/* Desktop Menu */}
@@ -499,57 +499,57 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-cyan-500/20 to-pink-600/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
         
-        <div className="text-center z-10 px-4 max-w-5xl mx-auto">
+        <div className="text-center z-10 px-4 max-w-5xl mx-auto w-full">
           <div className="mb-8">
-            {/* <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-full backdrop-blur-sm">
+            <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-full backdrop-blur-sm">
               <span className="text-blue-400">👋 Welcome to my portfolio</span>
-            </div> */}
+            </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 break-words">
               Hi, I'm{' '}
-              <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
-                Ah jui mray
+              <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient block sm:inline">
+                Mengly
               </span>
             </h1>
             
             <div className="h-16 mb-8">
-              <p className="text-2xl md:text-3xl text-gray-400">
+              <p className="text-xl sm:text-2xl md:text-3xl text-gray-400">
                 <span className="text-blue-400">{typedText}</span>
                 <span className="animate-pulse">|</span>
               </p>
             </div>
 
-            <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto px-4">
               Crafting exceptional digital experiences with clean code and creative solutions. 
               Let's build something amazing together.
             </p>
           </div>
           
-          <div className="flex flex-wrap gap-4 justify-center mb-16">
+          <div className="flex flex-wrap gap-4 justify-center mb-12 md:mb-16">
             <button
               onClick={() => scrollToSection('projects')}
               onMouseEnter={() => setCursorVariant('hover')}
               onMouseLeave={() => setCursorVariant('default')}
-              className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transform transition-all duration-200 shadow-lg hover:shadow-2xl flex items-center gap-2"
+              className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transform transition-all duration-200 shadow-lg hover:shadow-2xl flex items-center gap-2 text-sm sm:text-base"
             >
               View Projects
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className={`px-8 py-4 border-2 border-blue-500 rounded-lg font-semibold hover:bg-blue-500/10 transition-all duration-200 ${textClass} flex items-center gap-2`}
+              className={`px-6 sm:px-8 py-3 sm:py-4 border-2 border-blue-500 rounded-lg font-semibold hover:bg-blue-500/10 transition-all duration-200 ${textClass} flex items-center gap-2 text-sm sm:text-base`}
             >
               <Mail size={20} />
               Contact Me
             </button>
             <button
-              className={`px-8 py-4 border-2 ${isDarkMode ? 'border-gray-700' : 'border-gray-300'} rounded-lg font-semibold hover:border-blue-500 transition-all duration-200 ${textClass} flex items-center gap-2`}
+              className={`px-6 sm:px-8 py-3 sm:py-4 border-2 ${isDarkMode ? 'border-gray-700' : 'border-gray-300'} rounded-lg font-semibold hover:border-blue-500 transition-all duration-200 ${textClass} flex items-center gap-2 text-sm sm:text-base`}
             >
               <Download size={20} />
               Download CV
@@ -557,15 +557,15 @@ export default function Portfolio() {
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-12 md:mb-16 px-2">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`${cardBgClass} p-6 rounded-xl backdrop-blur-sm border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:scale-105 transition-transform duration-300`}
+                className={`${cardBgClass} p-4 sm:p-6 rounded-xl backdrop-blur-sm border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:scale-105 transition-transform duration-300`}
               >
-                <stat.icon className="mx-auto mb-2 text-blue-500" size={28} />
-                <div className="text-3xl font-bold text-blue-500 mb-1">{stat.value}</div>
-                <div className={`text-sm ${secondaryTextClass}`}>{stat.label}</div>
+                <stat.icon className="mx-auto mb-2 text-blue-500" size={24} />
+                <div className="text-2xl sm:text-3xl font-bold text-blue-500 mb-1">{stat.value}</div>
+                <div className={`text-xs sm:text-sm ${secondaryTextClass}`}>{stat.label}</div>
               </div>
             ))}
           </div>
