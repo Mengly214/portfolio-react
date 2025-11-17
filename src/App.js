@@ -432,7 +432,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
-              JD.Dev
+              H.Mengly
             </div>
 
             {/* Desktop Menu */}
@@ -507,9 +507,9 @@ export default function Portfolio() {
         
         <div className="text-center z-10 px-4 max-w-5xl mx-auto">
           <div className="mb-8">
-            <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-full backdrop-blur-sm">
+            {/* <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-full backdrop-blur-sm">
               <span className="text-blue-400">👋 Welcome to my portfolio</span>
-            </div>
+            </div> */}
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
               Hi, I'm{' '}
