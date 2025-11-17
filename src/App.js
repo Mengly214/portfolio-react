@@ -426,13 +426,22 @@ export default function Portfolio() {
       />
 
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? (isDarkMode ? 'bg-gray-900/95 backdrop-blur-lg shadow-lg' : 'bg-white/95 backdrop-blur-lg shadow-lg') : 'bg-transparent'
-      }`}>
+<nav
+  className={`fixed w-full z-50 transition-all duration-300 ${
+    scrolled
+      ? isDarkMode
+        ? 'bg-gray-900 shadow-lg'
+        : 'bg-white shadow-lg'
+      : isDarkMode
+      ? 'bg-gray-900'
+      : 'bg-white'
+  }`}
+>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
-              JD.Dev
+              H.Mengly
             </div>
 
             {/* Desktop Menu */}
