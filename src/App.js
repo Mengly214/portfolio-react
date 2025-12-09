@@ -631,8 +631,8 @@ export default function Portfolio() {
                       key={index}
                       className={`p-4 rounded-xl bg-gradient-to-br ${hobby.color} bg-opacity-10 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:scale-105 transition-transform cursor-pointer`}
                     >
-                      <hobby.icon className="mb-2" size={24} />
-                      <div className="font-semibold">{hobby.name}</div>
+                      <hobby.icon className="mb-2 : text-white" size={24} />
+                      <div className="font-semibold">{hobby.name}</div> 
                     </div>
                   ))}
                 </div>
@@ -1135,7 +1135,7 @@ export default function Portfolio() {
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg flex items-center justify-center">
                     {/* <Linkedin className="text-white" size={24} /> */}
-                    <Facebook />
+                    <Facebook className="text-white" size={24}/>
                   </div>
                   <div>
                     <div className="font-semibold">Facebook</div>
